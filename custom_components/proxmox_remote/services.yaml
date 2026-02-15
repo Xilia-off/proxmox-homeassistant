@@ -1,0 +1,42 @@
+start_vm:
+  name: Démarrer une VM
+  description: Démarre la VM Proxmox indiquée.
+  fields:
+    vmid:
+      name: VM ID
+      description: Identifiant numérique de la VM.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 999999
+
+stop_vm:
+  name: Arrêter une VM (hard stop)
+  description: Force l'arrêt de la VM Proxmox indiquée.
+  fields:
+    vmid:
+      name: VM ID
+      description: Identifiant numérique de la VM.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 999999
+
+shutdown_vm:
+  name: Éteindre une VM
+  description: Demande un arrêt propre de la VM Proxmox indiquée.
+  fields:
+    vmid:
+      name: VM ID
+      description: Identifiant numérique de la VM.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 999999
+
+shutdown_node:
+  name: Éteindre le nœud Proxmox
+  description: Demande l'arrêt propre du nœud Proxmox configuré.

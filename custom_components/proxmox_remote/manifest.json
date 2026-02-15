@@ -1,0 +1,10 @@
+{
+  "domain": "proxmox_remote",
+  "name": "Proxmox Remote",
+  "version": "0.1.0",
+  "documentation": "https://github.com/",
+  "issue_tracker": "https://github.com/",
+  "requirements": ["proxmoxer==2.0.1"],
+  "codeowners": ["@rudy3"],
+  "iot_class": "local_polling"
+}
